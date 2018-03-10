@@ -1,6 +1,6 @@
 def sum_of_digits_str (number_str):
     sum_str = (int(number_str[0])) + (int(number_str[1])) + (int(number_str[2]))
-    return int(sum_str)
+    return sum_str
 
 print (sum_of_digits_str("346"))
 
