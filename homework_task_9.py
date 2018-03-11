@@ -1,2 +1,3 @@
 name = "adam_thomas_moran"
-print (((name.split("_")[0]).capitalize()) + ((name.split("_")[1]).capitalize() + ((name.split("_")[2]).capitalize())))
+spl_name = name.split("_")
+print ((spl_name[0].capitalize()) + (spl_name[1].capitalize()) + (spl_name[2].capitalize()))
