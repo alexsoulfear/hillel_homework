@@ -14,8 +14,8 @@ def solve_quadratic_equation(a, b, c):
         if descr == 0:
             return value_zer(a, b)
         else:
-            return "none"
-
+            return None
+        
 print(solve_quadratic_equation(2,8,2))
 print(solve_quadratic_equation(1,2,1))
 print(solve_quadratic_equation(2,3,3))
