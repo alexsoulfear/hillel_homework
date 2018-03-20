@@ -1,9 +1,14 @@
 import math
 def circles_intersect(x1, y1, r1, x2, y2, r2):
-    if math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2) < r1 + r2:
+    vector = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+    if vector > r1 + r2 \
+            or vector + r1 < r2 \
+            or vector + r2 < r1:
+        return False
+    if x1 == x2 and y1 == y2 and r1 == r2\
+            or vector == r1 + r2:
         return True
     else:
-        return False
-
-print(circles_intersect(3,3,2,1,1,2))
-print(circles_intersect(4,8,3,1,1,2))
+        return True
+# Тупо и в лоб!!!
+print(circles_intersect(0, 0, 5, 0, 0, 4))
