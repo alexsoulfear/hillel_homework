@@ -8,7 +8,7 @@ def diff_min_max(num_limit, lower_bound, upper_bound):
         if number < min_num:
             min_num = number
         if number > max_num:
-            max_num = number - 1
+            max_num = number
     return max_num, min_num, max_num - min_num
 
 print(diff_min_max(9, 0, 15))
