@@ -1,15 +1,10 @@
 def is_str_isogramm (string):
     answer = False
-    lit_number = -1
-    while answer == False:
-        lit_number += 1
-        if not string.rfind(string[lit_number]) == lit_number - 1:
-            return True
-        else:
-            return False
+    for i in range(len(string)):
+        if not (int(string.rfind(string[i]))) == i:
+            answer = True
+            break
+    return print(answer)
 
-
-
-
-
-print(is_str_isogramm('goose'))
+is_str_isogramm('mergg')
+#string.rfind
