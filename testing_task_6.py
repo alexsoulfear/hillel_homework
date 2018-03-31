@@ -7,4 +7,3 @@ def is_str_isogramm (string):
     return print(answer)
 
 is_str_isogramm('mergg')
-#string.rfind
